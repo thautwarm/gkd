@@ -1,5 +1,7 @@
 ## gkd(搞快点)
 
+alpha version, do not use.
+
 A set of tools to help programming in LaTex.
 
 `pip install gkd`, and append contents of `gkd.tex` to your Tex sources.
