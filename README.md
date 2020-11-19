@@ -1,4 +1,4 @@
-## gkd
+## gkd(搞快点)
 
 A set of tools to help programming in LaTex.
 
