@@ -4,7 +4,7 @@ A set of tools to help programming in LaTex.
 
 `pip install gkd`, and append contents of `gkd.tex` to your Tex sources.
 
-### GKDBNF: The best LaTex BNF package you've ever seen?
+### 1. GKDBNF: The best LaTex BNF package you've ever seen?
 
 This relies on [paperbnf](https://github.com/thautwarm/paperbnf).
 
@@ -54,3 +54,25 @@ Term        = \S+
 ```
 
 Whitespace tokens are ignored.
+
+
+
+### 2. Utilities
+
+```tex
+\GKDSet{a}{1}
+
+\GKDGet{a} % get you "1"
+
+\GKDPush{xs}{1}
+\GKDPush{xs}{2} 
+\GKDPop{xs}
+\GKDPop{xs} % get you "1"
+
+
+\newcommand{\addone}[1]{
+    \GKDPyCall{"lambda x: int(x) + 1"}{#1}
+}
+\addone{2}   % 3
+\addone{2.0} % 3.0
+```
