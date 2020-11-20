@@ -4,7 +4,7 @@ alpha version, do not use.
 
 A set of tools to help programming in LaTex.
 
-`pip install gkd`, and append contents of `gkd.tex` to your Tex sources.
+`pip install wisepy2 gkd`, and append contents of `gkd.tex` to your Tex sources.
 
 ### 1. GKDBNF: The best LaTex BNF package you've ever seen?
 
@@ -52,7 +52,7 @@ Lexer rule by regex:
 NEWLINE     = [\r\n]+
 NONTERMINAL = <.*?>
 TERMINAL2   = !.*?!
-Term        = \S+
+TERMINAL    = \S+
 ```
 
 Whitespace tokens are ignored.
