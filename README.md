@@ -73,7 +73,7 @@ Whitespace tokens are ignored.
 
 
 \newcommand{\addone}[1]{
-    \GKDPyCall{"lambda x: int(x) + 1"}{#1}
+    \GKDPyCall{"lambda x: eval(x) + 1"}{#1}
 }
 \addone{2}   % 3
 \addone{2.0} % 3.0
